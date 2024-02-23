@@ -4,7 +4,7 @@ package com.jmd.principle.singleresponsibility;
  * Created with IntelliJ IDEA.
  * User: Mingda
  * Time: 2024/2/21 021 22:35
- * File: Singleresponsibility1
+ * File: SingleResponsibility1
  * Description: 单一职责原则，方式1
  */
 public class SingleResponsibility1 {
