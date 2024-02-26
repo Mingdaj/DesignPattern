@@ -43,7 +43,7 @@ class B extends Base {
     // 如果B需要使用A类的方法，使用组合关系
     private A a = new A();
 
-    // 这里重写了A类的func1方法，可能时无意识不小心的
+    // 这里的func1方法，是B类的，与A类无关
     public int func1(int num1, int num2) {
         return num1 + num2;
     }
