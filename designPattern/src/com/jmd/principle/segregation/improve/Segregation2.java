@@ -78,7 +78,7 @@ class D implements Interface1, Interface3 {
 }
 
 /**
- * A类通过接口Interface1、Interface2依赖（使用）B类，但是只会使用operation1()、operation2()、operation3()方法
+ * A类通过接口Interface1、Interface2依赖（使用）B类，使用operation1()、operation2()、operation3()方法
  */
 class A {
     public void method1(Interface1 i) {
@@ -94,7 +94,7 @@ class A {
 }
 
 /**
- * C类通过接口Interface1、Interface3依赖（使用）D类，但是只会使用operation1()、operation4()、operation5()方法
+ * C类通过接口Interface1、Interface3依赖（使用）D类，使用operation1()、operation4()、operation5()方法
  */
 class C {
 
