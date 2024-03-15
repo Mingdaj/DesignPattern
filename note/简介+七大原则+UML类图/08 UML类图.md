@@ -104,7 +104,7 @@ public class UserService implements BaseService {
 ![image.png](https://cdn.nlark.com/yuque/0/2024/png/35841438/1710485684346-5e4e5360-d2a0-4d9c-9307-7273db0f7727.png#averageHue=%231f2029&clientId=ud7678c30-162c-4&from=paste&height=257&id=uf3d9aec7&originHeight=257&originWidth=455&originalType=binary&ratio=1&rotation=0&showTitle=false&size=8598&status=done&style=none&taskId=u6bb12746-ff4f-4aa0-ba55-8c88216e359&title=&width=455)
 <a name="iUVAT"></a>
 #### 类图——关联（Association）
-关联关系就是类和类之间的联系，可以理解为拥有关系，一个类知道知道另一个类的属性和方法。是依赖关系的特例
+关联关系就是类和类之间的联系，可以理解为拥有关系，一个类知道知道另一个类的属性和方法。是依赖关系的特例。在程序中被关联类B以类属性的形式出现在关联类A中，也可能是关联类A引用了一个类型为被关联类B的全局变量
 
 - 具有导航性：双向关系或单向关系
 - 具有多重性：如“1”表示有且仅有1个；“0...”表示0个或多个；“0，1”表示0个或者1个；“n...m”表示n到m个都可以；“m...*”表示至少m个
@@ -130,7 +130,7 @@ public class IDCard {
 ![image.png](https://cdn.nlark.com/yuque/0/2024/png/35841438/1710486986243-166c5046-ce72-457e-82e4-aedc99f005df.png#averageHue=%231f2029&clientId=ud7678c30-162c-4&from=paste&height=263&id=u6b612bba&originHeight=263&originWidth=414&originalType=binary&ratio=1&rotation=0&showTitle=false&size=7813&status=done&style=none&taskId=u6f87cfdb-2ef1-4d04-9365-0c4a6aa1371&title=&width=414)
 <a name="bMwu9"></a>
 ### 类图——聚合（Aggregation）
-聚合关系就是整体和部分的关系，整体和部分可以分开。是关联关系的特例，所以具有导航性和多重性
+聚合关系就是整体和部分的关系，整体和部分可以分开。是关联关系的特例，所以具有导航性和多重性。程序中聚合和关联关系是一致的，只能从语义级别来区分
 ```java
 public class Computer {
     private Mouse mouse;
@@ -150,7 +150,7 @@ class Monitor {}
 ![image.png](https://cdn.nlark.com/yuque/0/2024/png/35841438/1710487502550-0369ad18-5175-4896-a8e5-0a1ef8b2257c.png#averageHue=%2321212a&clientId=ud7678c30-162c-4&from=paste&height=270&id=u13c7bfaf&originHeight=270&originWidth=513&originalType=binary&ratio=1&rotation=0&showTitle=false&size=13395&status=done&style=none&taskId=u517e9ee9-0f49-4dde-9729-d82afcdf0be&title=&width=513)
 <a name="mhNiM"></a>
 ### 类图——组合（Composition）
-组合关系也是整体与部分的关系，不过整体与部分不可分开。<br />如果我们认为Mouse，Monitor和Computer是不可分离的，则升级为组合关系：
+组合关系也是整体与部分的关系，不过整体与部分不可分开。程序中组合和关联关系是一致的，只能从语义级别来区分<br />如果我们认为Mouse，Monitor和Computer是不可分离的，则升级为组合关系：
 ```java
 public class Computer {
     private Mouse mouse = new Mouse();
