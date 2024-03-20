@@ -9,7 +9,7 @@ import java.util.Properties;
  * User: MingDa
  * Time: 2024/3/20 16:35
  * File: CoffeeFactory
- * Description:
+ * Description: 工厂类
  */
 public class CoffeeFactory {
 
