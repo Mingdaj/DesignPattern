@@ -2,7 +2,7 @@ package com.jmd.factory.abstractfactory;
 
 /**
  * Created with IntelliJ IDEA.
- * User: Mingda
+ * User: MingDa
  * Time: 2024/3/20 16:14
  * File: DessertFactory
  * Description: 抽象工厂类
