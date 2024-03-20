@@ -10,6 +10,7 @@ package com.jmd.umlclass.association;
 public class Person1 {
     private IDCard1 card;
 }
+
 class IDCard1 {
     private Person1 person;
 }

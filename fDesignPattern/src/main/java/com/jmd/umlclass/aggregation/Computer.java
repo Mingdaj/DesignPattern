@@ -19,5 +19,7 @@ public class Computer {
         this.monitor = monitor;
     }
 }
+
 class Mouse {}
+
 class Monitor {}
