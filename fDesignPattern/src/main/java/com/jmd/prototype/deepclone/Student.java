@@ -1,5 +1,7 @@
 package com.jmd.prototype.deepclone;
 
+import java.io.Serializable;
+
 /**
  * Created with IntelliJ IDEA.
  * User: MingDa
@@ -7,7 +9,7 @@ package com.jmd.prototype.deepclone;
  * File: Student
  * Description: 学生类
  */
-public class Student {
+public class Student implements Serializable {
 
     private String name;
     private int age;

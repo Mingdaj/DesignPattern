@@ -1,5 +1,7 @@
 package com.jmd.prototype.deepclone;
 
+import java.io.Serializable;
+
 /**
  * Created with IntelliJ IDEA.
  * User: MingDa
@@ -7,7 +9,7 @@ package com.jmd.prototype.deepclone;
  * File: Citation
  * Description: 奖状类
  */
-public class Citation implements Cloneable {
+public class Citation implements Cloneable, Serializable {
 
     private Student student;
 
